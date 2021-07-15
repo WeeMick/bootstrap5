@@ -9,7 +9,9 @@
   "author": "Michael Blair",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.34.1"
+    "sass": "^1.34.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^22.0.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
