@@ -1,5 +1,15 @@
 @import '../custom';
 
 .menu {
-  background: linear-gradient(to right, rgba($primary, 0.95), rgba($secondary, 0.95));
+ @include gradient;
+  
+  li {
+    padding: 0 0.7rem;
+
+    a {
+      color: $white !important;
+      text-transform: capitalize;
+      font-weight: 600;
+    }
+  }
 }
