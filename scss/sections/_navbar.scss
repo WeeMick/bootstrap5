@@ -1,13 +1,14 @@
-@import '../custom';
+@use '../custom' as c;
+@use '../components/mixins';
 
 .menu {
- @include gradient;
+ @include mixins.gradient;
   
   li {
     padding: 0 0.7rem;
 
     a {
-      color: $white !important;
+      color: c.$white !important;
       text-transform: capitalize;
       font-weight: 600;
     }

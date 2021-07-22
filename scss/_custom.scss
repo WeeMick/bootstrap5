@@ -31,5 +31,5 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
 
 $accordion-icon-width: 1.875rem;
 
-// IMPORT BOOTSTRAP 5
-@import "../node_modules//bootstrap/scss//bootstrap.scss"
+// use BOOTSTRAP 5
+@use "../node_modules//bootstrap/scss//bootstrap.scss"
