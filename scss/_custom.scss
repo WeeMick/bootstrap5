@@ -1,5 +1,24 @@
-// MY THEME COLOURS
+// use BOOTSTRAP 5
+@import "../node_modules//bootstrap/scss/bootstrap.scss";
 
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../node_modules/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// 4. Include any optional Bootstrap components as you like
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+
+// MY THEME COLOURS
 $purple-dark:  #9926F0;
 $purple-light:  #BB6EF5;
 $pink:    #D122E3;
@@ -31,5 +50,3 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
 
 $accordion-icon-width: 1.875rem;
 
-// use BOOTSTRAP 5
-@use "../node_modules//bootstrap/scss//bootstrap.scss"

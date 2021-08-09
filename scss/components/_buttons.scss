@@ -1,10 +1,19 @@
 @use '../custom';
 @use 'mixins';
 
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+@import "../../node_modules/bootstrap/scss/mixins/_breakpoints";
+
+
 .btn-rounded {
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+
   position: relative;
   padding: 0.9375rem 4.375rem 0.9375rem 1.35rem;
-  font-weight: 500;
+  font-weight: 700;
   margin: 0;
   border: 0.1rem solid rgba(custom.$white, 0.6);
   background-color: custom.$white;
