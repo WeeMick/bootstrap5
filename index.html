@@ -7,6 +7,7 @@
   <title>Learning Bootstrapv5 with sass</title>
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/vendors/css/glightbox.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -60,7 +61,7 @@
       <div class="col-md-6 intros">
         <h1 class="display-2">
           <span class="display-2--intro">Hey, I'm Michael</span>
-          <span class="display-2--description lh-base">Layout created with Bootstrap-v5</span>
+          <span class="display-2--description lh-base">This is a multi-responsive layout created with Bootstrap-v5</span>
         </h1>
         <button type="button" class="rounded-pill btn-rounded">Get in touch
           <span>
@@ -72,7 +73,7 @@
       <div class="col-md-6 intros text-end">
         <div class="video-box">
           <img src="../assets/images/art/intro-section-illustration.png" alt="video illustration" class="img-fluid">
-          <a href="#" class="position-absolute top-50 start-50 translate-middle">
+          <a href="#" class="glightbox position-absolute top-50 start-50 translate-middle">
             <span>
               <i class="fas fa-play-circle"></i>
             </span>
@@ -90,6 +91,17 @@
 
 <!-- Javascript - bootstrap and  popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <!-- Glightbox -->
+  <script src="assets/vendors/js/glightbox.min.js"></script>
+
+  <script type="text/javascript">
+  const lightbox = GLightbox({
+      'href': 'https://youtu.be/iJKCj8uAHz8',
+      'type': 'video',
+      'source': 'youtube', //vimeo, youtube or local
+      'width': 900,
+      'autoPlayVideos': 'true'
+});</script>
 
 </body>
 </html>
